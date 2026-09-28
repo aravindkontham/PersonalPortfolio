@@ -10,6 +10,16 @@ export interface Project {
   highlights: string[];
 }
 
+export interface GitHubRepo {
+  name: string;
+  repoUrl: string;
+  description: string;
+  category: "Full Stack & Cloud" | "Backend Microservice" | "Data & Business Intelligence";
+  techStack: string[];
+  liveUrl?: string;
+  highlights: string[];
+}
+
 export interface ExperienceItem {
   company: string;
   role: string;
@@ -143,7 +153,7 @@ export const portfolioData = {
     },
     {
       title: "On-Demand Car Wash Backend Management System",
-      category: "Full Backend System",
+      category: "Backend Microservices",
       period: "Feb 2025",
       description: "Robust modular RESTful backend system managing customer bookings, service packages, technician assignments, and billing workflows.",
       bullets: [
@@ -156,7 +166,89 @@ export const portfolioData = {
       githubUrl: "https://github.com/aravindkontham/On-Demand-Car-Wash",
       highlights: ["Controller-Service-Repository Pattern", "Entity Framework Core", "Full Swagger Documentation"],
     },
+    {
+      title: "ChandaTracker - Cloud Donation & Donor Management",
+      category: "Full Stack & Cloud",
+      period: "Recent",
+      description: "Full-stack cloud application featuring login authentication, receipt photo uploads to cloud storage, automated timestamps, and an auto-scrolling donor leaderboard.",
+      bullets: [
+        "Developed modern reactive UI with Next.js and Tailwind CSS hosted on Vercel.",
+        "Integrated Supabase PostgreSQL database, authentication triggers, and S3-compatible cloud storage buckets.",
+        "Implemented strict Row-Level Security (RLS) policies ensuring regular members can view/contribute while only admins can modify entries.",
+        "Constructed an auto-scrolling leaderboard algorithm aggregating donor contributions in real time.",
+      ],
+      techStack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "RLS Policies", "Vercel", "Tailwind CSS"],
+      githubUrl: "https://github.com/aravindkontham/ChandaTracker",
+      highlights: ["Supabase Row-Level Security", "Cloud Photo Storage", "Real-Time Leaderboard"],
+    },
+    {
+      title: "CRM Sales Pipeline Executive Analytics Dashboard",
+      category: "Data & Business Intelligence",
+      period: "Recent",
+      description: "Multi-page interactive Power BI dashboard providing deep visibility into sales pipeline conversion, deal velocity, stage attrition, and revenue projections.",
+      bullets: [
+        "Modelled enterprise sales data relationships and formulated optimized DAX measures for pipeline tracking.",
+        "Engineered visual dashboards covering single-page executive overviews and detailed multi-page drilldowns.",
+        "Enabled sales leadership to benchmark sales rep win/loss ratios and identify revenue bottlenecks.",
+      ],
+      techStack: ["Power BI", "DAX", "Data Modeling", "ETL", "Sales Analytics", "Data Visualization"],
+      githubUrl: "https://github.com/aravindkontham/CRM-SALES-PIPELINE-DASHBOARD",
+      liveUrl: "https://shorturl.at/y08lZ",
+      highlights: ["Live Published Report", "Advanced DAX Calculations", "Multi-Page Drilldowns"],
+    },
+    {
+      title: "Email Insights & Workforce Communication Analytics",
+      category: "Data & Business Intelligence",
+      period: "Recent",
+      description: "Comprehensive Power BI business analytics report uncovering email communication patterns, response latency across departments, and employee engagement metrics.",
+      bullets: [
+        "Built customized data models in Power BI to analyze workforce email velocity and communication volume.",
+        "Created multi-page analytical views (Overview and Employee Breakdown) with dynamic filtering and KPIs.",
+        "Surfaced actionable productivity insights regarding peak email hours and organizational response delays.",
+      ],
+      techStack: ["Power BI", "Data Modeling", "DAX", "Workforce Analytics", "KPI Dashboards"],
+      githubUrl: "https://github.com/aravindkontham/Email-Insights-PowerBi-Report",
+      liveUrl: "https://shorturl.at/IqXPz",
+      highlights: ["Live Published Report", "Workforce Metrics", "Interactive Filtering"],
+    },
   ] as Project[],
+
+  githubRepos: [
+    {
+      name: "ChandaTracker",
+      repoUrl: "https://github.com/aravindkontham/ChandaTracker",
+      description: "Login-protected web application to record chanda (donations) with photo uploads to Supabase storage, automated timestamps, Row-Level Security (RLS) policies, and an auto-scrolling donor leaderboard.",
+      category: "Full Stack & Cloud",
+      techStack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Vercel"],
+      highlights: ["Supabase Auth & Storage", "Row-Level Security (RLS)", "Auto-scrolling Leaderboard"],
+    },
+    {
+      name: "On-Demand-Car-Wash",
+      repoUrl: "https://github.com/aravindkontham/On-Demand-Car-Wash",
+      description: "Modular enterprise RESTful backend system built with ASP.NET Core managing customer bookings, service packages, technician assignments, and billing workflows with EF Core & SQL Server.",
+      category: "Backend Microservice",
+      techStack: ["ASP.NET Core", "C#", "EF Core", "SQL Server", "REST APIs", "Swagger"],
+      highlights: ["Controller-Service-Repository Pattern", "Relational EF Core Migrations", "Swagger UI"],
+    },
+    {
+      name: "CRM-SALES-PIPELINE-DASHBOARD",
+      repoUrl: "https://github.com/aravindkontham/CRM-SALES-PIPELINE-DASHBOARD",
+      liveUrl: "https://shorturl.at/y08lZ",
+      description: "Executive multi-page Power BI dashboard delivering deep analytics on sales pipeline conversion, deal velocity, quarterly forecasts, and sales team KPI performance.",
+      category: "Data & Business Intelligence",
+      techStack: ["Power BI", "DAX", "Data Modeling", "ETL", "Executive Dashboards"],
+      highlights: ["Live Published Dashboard", "Advanced DAX Measures", "Executive Reporting"],
+    },
+    {
+      name: "Email-Insights-PowerBi-Report",
+      repoUrl: "https://github.com/aravindkontham/Email-Insights-PowerBi-Report",
+      liveUrl: "https://shorturl.at/IqXPz",
+      description: "Enterprise communication analytics report tracking email velocity, department response latencies, employee engagement distributions, and peak collaboration hours.",
+      category: "Data & Business Intelligence",
+      techStack: ["Power BI", "DAX", "Workforce Analytics", "KPIs", "Data Visualization"],
+      highlights: ["Live Published Report", "Employee Metrics", "Peak Hour Analysis"],
+    },
+  ] as GitHubRepo[],
 
   skills: [
     {
@@ -196,6 +288,7 @@ export const portfolioData = {
       skills: [
         { name: "Azure SQL Database", level: "Advanced" },
         { name: "Microsoft SQL Server", level: "Advanced" },
+        { name: "PostgreSQL / Supabase", level: "Proficient" },
         { name: "MySQL", level: "Proficient" },
         { name: "Data Modeling & Indexing", level: "Proficient" },
       ],
@@ -208,7 +301,7 @@ export const portfolioData = {
         { name: "Visual Studio & VS Code", level: "Advanced" },
         { name: "Swagger / OpenAPI", level: "Advanced" },
         { name: "Postman", level: "Advanced" },
-        { name: "Power BI", level: "Proficient" },
+        { name: "Power BI (DAX)", level: "Advanced" },
       ],
     },
   ] as SkillCategory[],
