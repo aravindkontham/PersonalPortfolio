@@ -142,10 +142,14 @@ export default function Profiles() {
                         href={repo.liveUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center justify-center gap-1.5 py-2 px-3.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold transition-all"
+                        className={`inline-flex items-center justify-center gap-1.5 py-2 px-3.5 rounded-xl border text-xs font-semibold transition-all ${
+                          repo.category.includes("Data")
+                            ? "bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border-amber-500/30"
+                            : "bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border-emerald-500/30 shadow-sm shadow-emerald-500/10"
+                        }`}
                       >
                         <ExternalLink className="w-3.5 h-3.5" />
-                        <span>Live Report</span>
+                        <span>{repo.category.includes("Data") ? "Live Report" : "Live App"}</span>
                       </a>
                     )}
                   </div>

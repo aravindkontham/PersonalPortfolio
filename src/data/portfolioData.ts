@@ -59,7 +59,7 @@ export const portfolioData = {
     githubHandle: "aravindkontham",
     linkedin: "https://linkedin.com/in/aravind-kontham/",
     linkedinHandle: "aravind-kontham",
-    leetcode: "https://leetcode.com/u/aravindkontham",
+    leetcode: "https://leetcode.com/u/Aravind_Kontham/",
     leetcodeHandle: "aravindkontham",
     resumeUrl: "/Aravind_Resume.pdf",
     stats: [
@@ -179,6 +179,7 @@ export const portfolioData = {
       ],
       techStack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "RLS Policies", "Vercel", "Tailwind CSS"],
       githubUrl: "https://github.com/aravindkontham/ChandaTracker",
+      liveUrl: "https://chanda-tracker-swart.vercel.app/",
       highlights: ["Supabase Row-Level Security", "Cloud Photo Storage", "Real-Time Leaderboard"],
     },
     {
@@ -217,6 +218,7 @@ export const portfolioData = {
     {
       name: "ChandaTracker",
       repoUrl: "https://github.com/aravindkontham/ChandaTracker",
+      liveUrl: "https://chanda-tracker-swart.vercel.app/",
       description: "Login-protected web application to record chanda (donations) with photo uploads to Supabase storage, automated timestamps, Row-Level Security (RLS) policies, and an auto-scrolling donor leaderboard.",
       category: "Full Stack & Cloud",
       techStack: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Vercel"],
