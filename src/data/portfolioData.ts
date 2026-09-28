@@ -194,8 +194,7 @@ export const portfolioData = {
       ],
       techStack: ["Power BI", "DAX", "Data Modeling", "ETL", "Sales Analytics", "Data Visualization"],
       githubUrl: "https://github.com/aravindkontham/CRM-SALES-PIPELINE-DASHBOARD",
-      liveUrl: "https://shorturl.at/y08lZ",
-      highlights: ["Live Published Report", "Advanced DAX Calculations", "Multi-Page Drilldowns"],
+      highlights: ["Executive Dashboard", "Advanced DAX Calculations", "Multi-Page Drilldowns"],
     },
     {
       title: "Email Insights & Workforce Communication Analytics",
@@ -209,8 +208,7 @@ export const portfolioData = {
       ],
       techStack: ["Power BI", "Data Modeling", "DAX", "Workforce Analytics", "KPI Dashboards"],
       githubUrl: "https://github.com/aravindkontham/Email-Insights-PowerBi-Report",
-      liveUrl: "https://shorturl.at/IqXPz",
-      highlights: ["Live Published Report", "Workforce Metrics", "Interactive Filtering"],
+      highlights: ["Communication Analytics", "Workforce Metrics", "Interactive Filtering"],
     },
   ] as Project[],
 
@@ -235,20 +233,18 @@ export const portfolioData = {
     {
       name: "CRM-SALES-PIPELINE-DASHBOARD",
       repoUrl: "https://github.com/aravindkontham/CRM-SALES-PIPELINE-DASHBOARD",
-      liveUrl: "https://shorturl.at/y08lZ",
       description: "Executive multi-page Power BI dashboard delivering deep analytics on sales pipeline conversion, deal velocity, quarterly forecasts, and sales team KPI performance.",
       category: "Data & Business Intelligence",
       techStack: ["Power BI", "DAX", "Data Modeling", "ETL", "Executive Dashboards"],
-      highlights: ["Live Published Dashboard", "Advanced DAX Measures", "Executive Reporting"],
+      highlights: ["Executive Dashboard", "Advanced DAX Measures", "Executive Reporting"],
     },
     {
       name: "Email-Insights-PowerBi-Report",
       repoUrl: "https://github.com/aravindkontham/Email-Insights-PowerBi-Report",
-      liveUrl: "https://shorturl.at/IqXPz",
       description: "Enterprise communication analytics report tracking email velocity, department response latencies, employee engagement distributions, and peak collaboration hours.",
       category: "Data & Business Intelligence",
       techStack: ["Power BI", "DAX", "Workforce Analytics", "KPIs", "Data Visualization"],
-      highlights: ["Live Published Report", "Employee Metrics", "Peak Hour Analysis"],
+      highlights: ["Workforce Analytics", "Employee Metrics", "Peak Hour Analysis"],
     },
   ] as GitHubRepo[],
 
