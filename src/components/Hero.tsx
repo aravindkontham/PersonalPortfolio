@@ -138,15 +138,15 @@ export default function Hero() {
 
                   {/* Visual Architecture Flow Representation */}
                   <div className="space-y-3 font-mono text-xs">
-                    {/* Node 1: APIM */}
+                    {/* Node 1: APIM & BizTalk */}
                     <div className="p-3 rounded-xl bg-slate-900/90 border border-sky-500/30 flex items-center justify-between hover:border-sky-400/60 transition-colors">
                       <div className="flex items-center gap-2.5">
                         <div className="p-1.5 rounded-lg bg-sky-500/20 text-sky-400">
                           <ShieldCheck className="w-4 h-4" />
                         </div>
                         <div>
-                          <div className="text-white font-semibold text-xs">Azure API Management (APIM)</div>
-                          <div className="text-[10px] text-slate-400">JWT Auth • Rate Limit • Policy Gateway</div>
+                          <div className="text-white font-semibold text-xs">Azure APIM & BizTalk EAI</div>
+                          <div className="text-[10px] text-slate-400">Enterprise Orchestrations • Schemas • Gateway</div>
                         </div>
                       </div>
                       <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">200 OK</span>
@@ -199,7 +199,7 @@ export default function Hero() {
                     </div>
                     <div className="flex items-center gap-2 text-xs text-slate-300">
                       <CheckCircle2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
-                      <span>Enterprise Backend & Cloud Integrations at Capgemini</span>
+                      <span>Enterprise EAI (BizTalk Server) & Azure Cloud at Capgemini</span>
                     </div>
                     <div className="flex items-center gap-2 text-xs text-slate-300">
                       <CheckCircle2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />

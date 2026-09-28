@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-sm font-bold text-white">{portfolioData.personal.name}</div>
-              <div className="text-xs text-slate-400">Azure & .NET Backend Engineer • Capgemini</div>
+              <div className="text-xs text-slate-400">Azure, .NET & BizTalk Integration Engineer • Capgemini</div>
             </div>
           </div>
 

@@ -124,7 +124,7 @@ export default function RecruiterSummary() {
               {/* Badges / Chips */}
               <div className="flex flex-wrap items-center gap-2 pt-2">
                 <span className="text-xs text-slate-400 font-medium mr-1">Key Strengths:</span>
-                {["C# & .NET 8", "Azure Serverless", "Azure APIM & ADF", "Microservices", "RESTful APIs", "SQL Server"].map(
+                {["Microsoft BizTalk Server", "C# & .NET 8", "Azure Serverless", "Azure APIM & ADF", "EAI & Microservices", "SQL Server"].map(
                   (badge, i) => (
                     <span
                       key={i}

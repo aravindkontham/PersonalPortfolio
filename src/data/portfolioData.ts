@@ -48,10 +48,10 @@ export interface SkillCategory {
 export const portfolioData = {
   personal: {
     name: "Aravind Kontham",
-    role: "Azure & .NET Backend Engineer",
+    role: "Azure, .NET & BizTalk Integration Engineer",
     company: "Capgemini",
-    headline: "Engineering Scalable Cloud Services, Microservices & High-Throughput Data Pipelines",
-    bio: "Azure and .NET Developer at Capgemini with deep expertise in crafting robust RESTful microservices using ASP.NET Core and architecting event-driven cloud integrations with Microsoft Azure (Logic Apps, Function Apps, Service Bus, Azure Data Factory, and API Management). Focused on secure, observable, high-performance enterprise systems.",
+    headline: "Engineering Scalable Cloud Services, Enterprise BizTalk Integrations & High-Throughput Microservices",
+    bio: "Azure, .NET, and BizTalk Developer at Capgemini with specialized expertise in Enterprise Application Integration (EAI), orchestrations, schemas, and maps, combined with modern cloud solutions using Azure Integration Services (Logic Apps, Function Apps, Service Bus, APIM, and Data Factory) and ASP.NET Core microservices.",
     location: "Hyderabad / Telangana, India",
     phone: "+91 6305527319",
     email: "aravindkontham11@gmail.com",
@@ -60,12 +60,12 @@ export const portfolioData = {
     linkedin: "https://linkedin.com/in/aravind-kontham/",
     linkedinHandle: "aravind-kontham",
     leetcode: "https://leetcode.com/u/Aravind_Kontham/",
-    leetcodeHandle: "aravindkontham",
+    leetcodeHandle: "Aravind_Kontham",
     resumeUrl: "/Aravind_Resume.pdf",
     stats: [
       { label: "Current Role", value: "Capgemini SWE" },
-      { label: "Cloud Certifications", value: "4x Certified" },
-      { label: "Core Stack", value: ".NET & Azure" },
+      { label: "Cloud & AI", value: "4x Certified" },
+      { label: "Core Stack", value: "Azure, .NET & BizTalk" },
       { label: "B.Tech CGPA", value: "8.79 / 10" },
     ],
   },
@@ -73,11 +73,11 @@ export const portfolioData = {
   recruiterQuickFacts: [
     {
       title: "Current Status",
-      desc: "Software Engineer at Capgemini building enterprise cloud solutions with .NET and Azure.",
+      desc: "Software Engineer at Capgemini building enterprise BizTalk integration workflows, .NET microservices, and Azure cloud solutions.",
     },
     {
       title: "Core Competency",
-      desc: "Architecting ASP.NET Core Web APIs, Microservices, Azure Serverless (Functions, Logic Apps), Service Bus, APIM, and ETL pipelines (ADF).",
+      desc: "Enterprise Application Integration (EAI) with Microsoft BizTalk Server (Orchestrations, Maps, Pipelines, Adapters), coupled with Azure Integration Services (Logic Apps, Service Bus, APIM, ADF) and ASP.NET Core microservices.",
     },
     {
       title: "Recognitions & Certifications",
@@ -92,18 +92,18 @@ export const portfolioData = {
   experiences: [
     {
       company: "Capgemini Technology Services India Limited",
-      role: "Software Engineer – Azure & .NET Developer",
+      role: "Software Engineer – Azure, .NET & BizTalk Developer",
       period: "Jul 2025 – Present",
       location: "India",
       type: "Full-time",
-      summary: "Spearheading cloud-native backend development and Azure integrations for enterprise client systems.",
+      summary: "Spearheading Enterprise Application Integration (EAI) with Microsoft BizTalk Server, cloud-native backend development, and Azure integrations for client systems.",
       bullets: [
-        "Architect and develop production cloud-based solutions leveraging .NET 8 / ASP.NET Core and Microsoft Azure infrastructure.",
-        "Implement enterprise workflows using Azure Logic Apps, Azure Function Apps, and Azure Service Bus for decoupled messaging.",
-        "Construct real-time API integrations, data transformations, and end-to-end data pipelines with Azure Data Factory (ADF) and Azure API Management (APIM).",
-        "Engineer scalable, secure RESTful microservices adhering to Domain-Driven Design (DDD) and SOLID principles.",
+        "Implement enterprise BizTalk Server integration use cases, building orchestrations, XML/XSLT maps, message schemas, and custom pipeline components.",
+        "Configure BizTalk adapters (WCF, SQL, FILE, SFTP) to facilitate reliable B2B data exchanges and seamless connectivity with line-of-business systems.",
+        "Bridge on-premise BizTalk architectures with Microsoft Azure cloud infrastructure using Azure Service Bus, Logic Apps, and API Management.",
+        "Architect and develop scalable, secure RESTful microservices and data pipelines using ASP.NET Core (.NET 8) and Azure Data Factory (ADF).",
       ],
-      technologies: ["C# .NET", "ASP.NET Core", "Azure Logic Apps", "Function Apps", "Service Bus", "Azure Data Factory", "APIM", "Docker", "SQL Server"],
+      technologies: ["Microsoft BizTalk Server", "C# .NET", "ASP.NET Core", "Azure Logic Apps", "Function Apps", "Service Bus", "Azure Data Factory", "APIM", "Docker", "SQL Server"],
     },
     {
       company: "Capgemini Technology Services India Limited",
@@ -267,6 +267,18 @@ export const portfolioData = {
         { name: "Entity Framework Core", level: "Advanced" },
         { name: "SOLID Principles & Clean Architecture", level: "Advanced" },
         { name: "Dependency Injection", level: "Advanced" },
+      ],
+    },
+    {
+      category: "Enterprise Integration & BizTalk",
+      skills: [
+        { name: "Microsoft BizTalk Server", level: "Advanced" },
+        { name: "BizTalk Orchestrations & Workflows", level: "Advanced" },
+        { name: "Schemas, Maps & XSLT", level: "Advanced" },
+        { name: "Custom Pipelines & Decoders", level: "Advanced" },
+        { name: "BizTalk Adapters (WCF, SQL, FILE, SFTP)", level: "Advanced" },
+        { name: "EAI & B2B Messaging", level: "Advanced" },
+        { name: "Hybrid Cloud Integration (BizTalk + Azure)", level: "Advanced" },
       ],
     },
     {
