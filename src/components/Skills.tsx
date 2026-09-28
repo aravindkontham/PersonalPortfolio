@@ -15,7 +15,7 @@ export default function Skills() {
             Skills & Core Competencies
           </h2>
           <p className="text-sm sm:text-base text-slate-400 mt-3">
-            Specialized in enterprise .NET backend engineering, Microsoft Azure cloud solutions, and scalable API systems.
+            Specialized in enterprise .NET backend engineering, Microsoft BizTalk Server, Azure Integration Services, and scalable API systems.
           </p>
         </div>
 

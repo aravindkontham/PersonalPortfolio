@@ -37,6 +37,7 @@ export interface Certification {
   validity: string;
   status: "Active" | "Certified";
   credentialId?: string;
+  credentialUrl?: string;
   badgeColor: string;
 }
 
@@ -282,7 +283,7 @@ export const portfolioData = {
       ],
     },
     {
-      category: "Microsoft Azure Cloud",
+      category: "Azure Integration Services",
       skills: [
         { name: "Azure Logic Apps", level: "Advanced" },
         { name: "Azure Function Apps (Serverless)", level: "Advanced" },
@@ -322,6 +323,7 @@ export const portfolioData = {
       issuer: "Microsoft",
       validity: "Mar 2026 – Mar 2027",
       status: "Certified",
+      credentialUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AravindKontham/32F93CB66BF36AED?sharingId=B666DF389731FE2D",
       badgeColor: "from-blue-600 to-cyan-500",
     },
     {
@@ -329,6 +331,7 @@ export const portfolioData = {
       issuer: "Google",
       validity: "Mar 2026 – Mar 2029",
       status: "Certified",
+      credentialUrl: "https://www.credly.com/badges/fcc11885-df0c-4cfb-9312-75e5a6f2f9d9/linked_in_profile",
       badgeColor: "from-amber-500 to-rose-500",
     },
     {
@@ -336,6 +339,7 @@ export const portfolioData = {
       issuer: "Microsoft",
       validity: "Issued Jan 2026",
       status: "Certified",
+      credentialUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AravindKontham/AAE8CB65DED8994D?sharingId=B666DF389731FE2D",
       badgeColor: "from-blue-500 to-indigo-600",
     },
     {
@@ -343,6 +347,7 @@ export const portfolioData = {
       issuer: "Microsoft",
       validity: "Issued Oct 2022",
       status: "Certified",
+      credentialUrl: "https://www.credly.com/badges/5a211301-f904-47b4-9e34-c474bc81e403/linked_in_profile",
       badgeColor: "from-cyan-600 to-blue-700",
     },
   ] as Certification[],

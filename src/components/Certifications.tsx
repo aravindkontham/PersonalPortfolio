@@ -1,4 +1,4 @@
-import { Award, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { Award, ShieldCheck, CheckCircle2, ExternalLink } from "lucide-react";
 import { portfolioData } from "@/data/portfolioData";
 
 export default function Certifications() {
@@ -15,7 +15,7 @@ export default function Certifications() {
             Official Certifications
           </h2>
           <p className="text-sm sm:text-base text-slate-400 mt-3">
-            Validated cloud and AI architecture proficiencies from Microsoft and Google.
+            Validated cloud and AI architecture proficiencies from Microsoft and Google. Click any credential to verify authenticity.
           </p>
         </div>
 
@@ -55,13 +55,28 @@ export default function Certifications() {
                 </h3>
               </div>
 
-              {/* Validity Footer */}
-              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono">
-                <span className="flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5 text-sky-400" />
-                  <span>Verified</span>
-                </span>
-                <span>{cert.validity}</span>
+              <div>
+                {/* Validity Footer */}
+                <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400 font-mono mb-3">
+                  <span className="flex items-center gap-1">
+                    <ShieldCheck className="w-3.5 h-3.5 text-sky-400" />
+                    <span>Verified</span>
+                  </span>
+                  <span>{cert.validity}</span>
+                </div>
+
+                {/* Direct Verification Link */}
+                {cert.credentialUrl && (
+                  <a
+                    href={cert.credentialUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-slate-800/70 hover:bg-sky-500/20 text-slate-300 hover:text-sky-300 border border-slate-700/60 hover:border-sky-500/40 text-xs font-semibold transition-all group-hover:border-sky-500/30 shadow-sm"
+                  >
+                    <span>Verify Credential</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
